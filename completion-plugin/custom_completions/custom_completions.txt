@@ -1,0 +1,7 @@
+; This is a txt file example on how you can include user added suggestions
+
+; lines starting with a semi-colon are comments.
+
+; use one line per object, no commas or special characters.
+
+; you can use library prefix like "librarynametest/objectnametest"
