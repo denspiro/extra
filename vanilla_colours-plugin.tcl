@@ -1,17 +1,22 @@
 # Colours for vanilla
+# -font-face "JetBrains Mono"
 
 proc change_the_colours {mytoplevel} {
   set tkcanvas [tkcanvas_name $mytoplevel]
-  $tkcanvas configure -background "#FFE45E"
-  $tkcanvas configure -highlightcolor "#FFE45E" -highlightthickness 4
+  $tkcanvas configure -background "#f9dd75"
+}
+
+proc edit_mode {mytoplevel} {
+  set tkcanvas [tkcanvas_name $mytoplevel]
+  $tkcanvas configure -highlightcolor "#f9dd75" -highlightthickness 5
   if {$::editmode($mytoplevel) == 1} {
     # Reminder that window has been in editmode
-    $tkcanvas configure -highlightcolor "#FF6392" -highlightthickness 4
+    $tkcanvas configure -highlightcolor "#FF6392" -highlightthickness 5
   }
 }
 
-bind PatchWindow <<EditMode>> {+change_the_colours %W}
-bind PatchWindow <<Loaded>> {+change_the_colours %W}
+bind PatchWindow <<EditMode>> {edit_mode %W}
+bind PatchWindow <<Loaded>> {change_the_colours %W}
 
 #		 $tkcanvas itemconfigure message -backlight green
 #        $tkcanvas itemconfigure message -background yellow

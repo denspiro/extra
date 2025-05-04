@@ -1,4 +1,4 @@
-#N canvas 466 101 769 707 12;
+#N canvas 454 66 1455 971 12;
 #N canvas 739 204 401 622 output 0;
 #X obj 150 341 nbx 5 17 -100 0 0 0 \$0-vol \$0-vol Volume 0 -8 0 12 #fcfcfc #000000 #000000 0 256;
 #X obj 221 339 tgl 19 0 \$0-dsp \$0-dsp DSP 23 11 0 12 #fcfcfc #000000 #000000 0 1;
@@ -341,7 +341,7 @@
 #X restore 26 642 pd guts;
 #X text 217 533 <- click me;
 #X restore 23 84 pd creation arguments;
-#N canvas 361 4 1274 914 preset 0;
+#N canvas 454 66 1455 971 preset 0;
 #X obj 837 508 s \$0-msg;
 #X obj 837 111 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 12 #fcfcfc #000000 #000000 0 256;
 #X text 951 137 set program;
